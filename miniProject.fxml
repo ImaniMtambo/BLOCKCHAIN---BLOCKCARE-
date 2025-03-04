@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MiniProjectController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1018.0" styleClass="anchor-pane" stylesheets="@application.css" VBox.vgrow="ALWAYS">
+      <children>
+            <Pane layoutX="3.0" layoutY="5.0" prefHeight="64.0" prefWidth="989.0" styleClass="header" stylesheets="@application.css">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="67.0" layoutX="3.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/IMG_3802.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="17.0" styleClass="header-text" text="BLOCK CARE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="64.0" fitWidth="69.0" layoutX="924.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/profile.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="surname" layoutX="877.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="55.21599960327151">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="userEmail" layoutX="826.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="97.43359375000011">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="2.0" layoutY="69.0" prefHeight="326.0" prefWidth="989.0">
+               <children>
+                  <TabPane layoutY="1.0" prefHeight="500.0" prefWidth="989.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab styleClass="header-text" text="Home">
+                        <content>
+                          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="0.0" prefHeight="600.0" prefWidth="1020.0" styleClass="anchorPane" stylesheets="@application.css">
+                                 <children>
+                                    <Pane layoutX="5.0" layoutY="33.0" prefHeight="264.0" prefWidth="209.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <ImageView fitHeight="243.0" fitWidth="152.0" layoutX="42.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/Muscle.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Label layoutX="6.0" layoutY="7.0" styleClass="header-text" text="Health Diagnosis">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane layoutX="222.0" layoutY="35.0" prefHeight="80.0" prefWidth="246.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Pane layoutX="9.0" layoutY="9.0" prefHeight="49.0" prefWidth="51.0" styleClass="image-border" stylesheets="@application.css">
+                                             <children>
+                                                <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icons/heart.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                          <ProgressBar layoutX="9.0" layoutY="64.0" opacity="0.62" prefHeight="11.0" prefWidth="200.0" progress="0.8" />
+                                          <Text fx:id="heartRate" layoutX="66.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="70.13671875" />
+                                          <Label layoutX="66.0" layoutY="16.0" text="Heart">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="222.0" layoutY="122.0" prefHeight="83.0" prefWidth="246.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Pane layoutX="9.0" layoutY="9.0" prefHeight="49.0" prefWidth="51.0" styleClass="image-border" stylesheets="@application.css">
+                                             <children>
+                                                <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icons/lungs.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                          <Label layoutX="66.0" layoutY="6.0" prefHeight="28.0" prefWidth="58.0" styleClass="header-text" text="Lungs">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <ProgressBar layoutX="9.0" layoutY="64.0" opacity="0.62" prefHeight="11.0" prefWidth="200.0" progress="0.71" />
+                                          <Text fx:id="lungs" layoutX="66.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="104.13671875" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="222.0" layoutY="213.0" prefHeight="83.0" prefWidth="246.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Pane layoutX="9.0" layoutY="9.0" prefHeight="49.0" prefWidth="51.0" styleClass="image-border" stylesheets="@application.css">
+                                             <children>
+                                                <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icons/liver.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                          <Label layoutX="66.0" layoutY="12.0" styleClass="header-text" text="Liver">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <ProgressBar layoutX="9.0" layoutY="64.0" opacity="0.62" prefHeight="11.0" prefWidth="200.0" progress="0.8" />
+                                          <Text fx:id="liver" layoutX="62.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="88.13671875" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="477.0" layoutY="36.0" prefHeight="168.0" prefWidth="504.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Text fill="#0d0d0d" layoutX="15.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header-text" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="conditionDiscription" fill="#686464" fontSmoothingType="LCD" layoutX="18.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Data" wrappingWidth="484.654296875" />
+                                          <Text fx:id="manaGementDiscription" fill="#686464" layoutX="17.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" wrappingWidth="475.587890625" />
+                                          <Text fx:id="condition" layoutX="18.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" wrappingWidth="246.28857421875">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font></Text>
+                                          <Text fx:id="managenemnt" layoutX="18.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" wrappingWidth="478.28857421875" />
+                                          <Label layoutX="17.0" layoutY="8.0" styleClass="header-text" text="Previous and Current Medical Conditions">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="18.0" layoutY="85.0" text="Management">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="476.0" layoutY="212.0" prefHeight="84.0" prefWidth="504.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Text fill="#0d0d0d" layoutX="17.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header-text" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="surgicalHistory" fill="#686464" layoutX="17.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="450.9830722808838" />
+                                          <Label layoutX="17.0" layoutY="6.0" styleClass="header-text" text="Surgical History">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="476.0" layoutY="304.0" prefHeight="124.0" prefWidth="504.0" stylesheets="@application.css">
+                                       <children>
+                                          <Pane layoutX="3.0" layoutY="3.0" prefHeight="117.0" prefWidth="110.0" styleClass="image-border">
+                                             <children>
+                                                <ImageView fitHeight="87.0" fitWidth="86.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icons/medical.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                          <Label layoutX="125.0" layoutY="10.0">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Text fx:id="doctorName" fill="#686464" layoutX="126.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" />
+                                          <Text fx:id="DoctorsPhoneNumber" fill="#686464" layoutX="126.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" />
+                                          <Text fx:id="DoctorsEmail" fill="#686464" layoutX="126.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" />
+                                          <Text fx:id="Hospital" fill="#686464" layoutX="127.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" />
+                                          <Label layoutX="127.0" layoutY="6.0" styleClass="header-text" text="Hospital and Doctor">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="image-view" />
+                                          <String fx:value="anchorPane" />
+                                       </styleClass>
+                                    </Pane>
+                                    <Pane layoutX="5.0" layoutY="303.0" prefHeight="283.0" prefWidth="462.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Pane layoutX="5.0" layoutY="5.0" prefHeight="116.0" prefWidth="111.0" styleClass="image-view">
+                                             <children>
+                                                <ImageView fitHeight="114.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/profile.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                          <Label layoutX="132.0" layoutY="14.0" styleClass="header-text" text="Name                : " />
+                                          <Label layoutX="134.0" layoutY="47.0" styleClass="header-text" text="Email                 :" />
+                                          <Label layoutX="134.0" layoutY="79.0" prefHeight="17.0" prefWidth="89.0" styleClass="header-text" text="Phone Number :" />
+                                          <Text fx:id="name" layoutX="231.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                          <Text fx:id="phoneNumber" layoutX="231.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                          <Text fx:id="userEmail" layoutX="231.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.13671875" />
+                                          <Label layoutX="14.0" layoutY="121.0" prefHeight="34.0" prefWidth="111.0" text="Treament plan: " textFill="#111111">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="5.0" layoutY="119.0" prefHeight="4.0" prefWidth="450.0" />
+                                          <Label layoutX="14.0" layoutY="150.0" text="Go to the treatment plan tab to see what each treatment plan has." />
+                                          <Text fx:id="treatment_planT" layoutX="123.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Appoitments">
+                        <content>
+                          <AnchorPane maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="0.0" prefHeight="400.0" prefWidth="989.0">
+                                 <children>
+                                    <Pane layoutX="5.0" layoutY="34.0" prefHeight="89.0" prefWidth="648.0" stylesheets="@application.css">
+                                       <styleClass>
+                                          <String fx:value="image-view" />
+                                          <String fx:value="pane-border" />
+                                       </styleClass>
+                                       <children>
+                                          <Pane layoutX="79.0" layoutY="10.0" prefHeight="64.0" prefWidth="558.0" styleClass="image-border">
+                                             <children>
+                                                <Label layoutX="87.0" layoutY="10.0" styleClass="header-text" text="Date and time" />
+                                                <Label layoutX="217.0" layoutY="11.0" styleClass="header-text" text="Location" />
+                                                <Label layoutX="14.0" layoutY="11.0" styleClass="header-text" text="Type" />
+                                                <Text fx:id="checkUpType" layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" />
+                                                <Text fx:id="checkUpDate" layoutX="86.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" />
+                                                <Text fx:id="checkUpLocation" layoutX="216.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" />
+                                                <Separator layoutX="8.0" layoutY="29.0" prefHeight="6.0" prefWidth="523.0" />
+                                                <Label layoutX="318.0" layoutY="11.0" styleClass="header-text" text="Doctor" />
+                                                <Text fx:id="doctor" layoutX="318.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" />
+                                                <Label layoutX="426.0" layoutY="11.0" styleClass="header-text" text="Treatment plan" />
+                                                <Text fx:id="treatment_planT" layoutX="426.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" />
+                                             </children>
+                                          </Pane>
+                                          <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/calendar.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Label layoutX="5.0" layoutY="10.0" styleClass="header-text" text="Next appoitment">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="Treatment plans">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="9.0" layoutY="8.0" styleClass="header-text" text="Treatments plans">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane layoutX="11.0" layoutY="36.0" prefHeight="141.0" prefWidth="217.0" />
+                                    <Pane layoutX="8.0" layoutY="35.0" prefHeight="168.0" prefWidth="217.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Label layoutX="25.0" layoutY="12.0" styleClass="header-text" text="Hypertension Management">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="27.0" layoutY="44.0" text="Medication" />
+                                          <Label layoutX="26.0" layoutY="69.0" text="Lifestyle Modifications" />
+                                          <Label layoutX="27.0" layoutY="95.0" text="Regular Monitoring" />
+                                          <Label layoutX="29.0" layoutY="126.0" prefHeight="27.0" prefWidth="64.0" text="Plan A">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="8.0" layoutY="125.0" prefWidth="200.0" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="260.0" layoutY="35.0" prefHeight="169.0" prefWidth="217.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Label layoutX="28.0" layoutY="14.0" styleClass="header-text" text="Diabetes Care">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="30.0" layoutY="42.0" text="Medication" />
+                                          <Label layoutX="30.0" layoutY="67.0" text="Diet and Exercise" />
+                                          <Label layoutX="31.0" layoutY="94.0" text="Blood Glucose Monitoring" />
+                                          <Label layoutX="31.0" layoutY="129.0" prefHeight="27.0" prefWidth="64.0" text="Plan B">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="21.0" layoutY="128.0" prefHeight="3.0" prefWidth="189.0" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="514.0" layoutY="36.0" prefHeight="168.0" prefWidth="217.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Label layoutX="22.0" layoutY="14.0" styleClass="header-text" text="Chronic Pain Management">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="27.0" layoutY="42.0" text="Medication" />
+                                          <Label layoutX="27.0" layoutY="68.0" text="Physical Therapy" />
+                                          <Label layoutX="27.0" layoutY="94.0" text="Psychological Support" />
+                                          <Label layoutX="28.0" layoutY="130.0" prefHeight="27.0" prefWidth="64.0" text="Plan C">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="21.0" layoutY="128.0" prefHeight="4.0" prefWidth="177.0" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="7.0" layoutY="300.0" prefHeight="89.0" prefWidth="723.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Pane layoutX="3.0" layoutY="3.0" prefHeight="82.0" prefWidth="89.0" styleClass="image-border">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="95.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icons/care.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                          <Text layoutX="98.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our treatment plans are personalized based on your medical history.  By analyzing your past conditions, surgeries, and family medical background, we recommend tailored treatments to meet your unique needs. However due to finances, you can still choose plan that works for you" wrappingWidth="526.412109375" />
+                                       </children>
+                                    </Pane>
+                                    <Label layoutX="8.0" layoutY="269.0" styleClass="header-text" text="Treatments plan recomendation">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="Health Recording">
+                           <content>
+                              <AnchorPane maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="0.0" prefHeight="478.0" prefWidth="989.0">
+                                 <children>
+                                    <Label layoutX="5.0" layoutY="6.0" styleClass="header-text" text="Health Readings and next appotment">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane fx:id="treatment_plan" layoutX="4.0" layoutY="31.0" prefHeight="500.0" prefWidth="982.0" styleClass="image-view" stylesheets="@application.css">
+                                       <children>
+                                          <Label fx:id="blood_glucose_label" layoutX="103.0" layoutY="18.0" text="Liver" />
+                                          <TextField fx:id="blood_glucose_input" layoutX="137.0" layoutY="14.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label fx:id="prescription_history_label" layoutX="17.0" layoutY="54.0" text="Prescription history" />
+                                          <Label layoutX="94.0" layoutY="166.0" />
+                                          <Label fx:id="heart_rate_label" layoutX="73.0" layoutY="94.0" text="Heart rate" />
+                                          <TextField fx:id="prescription_input_field" layoutX="136.0" layoutY="51.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <TextField fx:id="heart_rate_input_field" layoutX="137.0" layoutY="90.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <TextField fx:id="surgical_history_input_field" layoutX="137.0" layoutY="200.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label fx:id="surgical_history_label" layoutX="38.0" layoutY="204.0" text="Surgical History" />
+                                          <TextField fx:id="name_surname_input" layoutX="136.0" layoutY="241.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label fx:id="name_surname_label" layoutX="17.0" layoutY="245.0" text="Name and surname" />
+                                          <TextField fx:id="email_input_field" layoutX="137.0" layoutY="281.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label fx:id="email_label" layoutX="96.0" layoutY="287.0" text="Email" />
+                                          <TextField fx:id="phone_number_input" layoutX="137.0" layoutY="321.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label fx:id="phone_number_label" layoutX="45.0" layoutY="325.0" text="Phone number" />
+                                          <Label fx:id="heart_rate_label1" layoutX="72.0" layoutY="134.0" text="Condition" />
+                                          <TextField fx:id="Condition" layoutX="136.0" layoutY="130.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label fx:id="heart_rate_label11" layoutX="52.0" layoutY="170.0" text="Management" />
+                                          <TextField fx:id="conditionManagenemnt" layoutX="135.0" layoutY="166.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label layoutX="675.0" layoutY="6.0" prefHeight="18.0" prefWidth="140.0" text="Next appoitment">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="470.0" layoutY="46.0" prefHeight="434.0" prefWidth="444.0">
+                                       <children>
+                                          <Label fx:id="date_label" layoutX="87.0" layoutY="18.0" text="Date" />
+                                          <TextField fx:id="date_input_field" layoutX="118.0" layoutY="14.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label fx:id="time_label" layoutX="86.0" layoutY="54.0" text="Time" />
+                                          <Label fx:id="doctor_label" layoutX="75.0" layoutY="168.0" text="Doctor" />
+                                          <Label fx:id="appointment_type_label" layoutX="20.0" layoutY="90.0" text="Appoitment Type" />
+                                          <Label fx:id="location_label" layoutX="65.0" layoutY="128.0" text="Location" />
+                                          <TextField fx:id="time_input_field" layoutX="117.0" layoutY="50.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <TextField fx:id="location_input_field" layoutX="118.0" layoutY="126.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <TextField fx:id="doctor_input_field" layoutX="118.0" layoutY="163.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <MenuButton fx:id="menuButton" layoutX="118.0" layoutY="88.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="320.0" text="Select appoitment type">
+                                             <items>
+                                                <MenuItem fx:id="CheckUp" mnemonicParsing="false" onAction="#handleMenuItemAction" text="Check up" />
+                                                <MenuItem fx:id="Other" mnemonicParsing="false" onAction="#handleMenuItemAction" text="Other" />
+                                             </items>
+                                          </MenuButton>
+                                          <CheckBox layoutX="202.0" layoutY="354.0" mnemonicParsing="false" text="I agree to the terms and conditions" />
+                                          <Button fx:id="submitHealthReading" layoutX="247.0" layoutY="391.0" mnemonicParsing="false" onAction="#submitHealthReading" prefHeight="25.0" prefWidth="186.0" text="Submit" />
+                                          <Label fx:id="doctor_label1" layoutX="31.0" layoutY="203.0" text="Doctors Email" />
+                                          <TextField fx:id="doctorsEmail_input_filed" layoutX="116.0" layoutY="199.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label fx:id="doctorsPhone_label" layoutX="22.0" layoutY="241.0" text="Phone Number" />
+                                          <TextField fx:id="doctor_number_input_filed" layoutX="115.0" layoutY="237.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label fx:id="doctorsPhone_label1" layoutX="63.0" layoutY="281.0" text="Hospial" />
+                                          <TextField fx:id="hospitai_input_filed" layoutX="116.0" layoutY="276.0" prefHeight="25.0" prefWidth="320.0" />
+                                          <Label fx:id="doctorsPhone_label11" layoutX="23.0" layoutY="320.0" text="Treatment plan" />
+                                          <TextField fx:id="treatment_plan_field" layoutX="115.0" layoutY="317.0" prefHeight="25.0" prefWidth="320.0" promptText="Plan A | Plan B | Plan C" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </Pane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
